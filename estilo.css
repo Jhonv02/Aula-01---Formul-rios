@@ -1,0 +1,55 @@
+h1{
+    text-align: center;
+}
+
+body{
+    font-family: Arial;
+}
+
+form{
+    background-color: cadetblue;
+    color: white;
+    width: fit-content;
+    padding: 5rem;
+    margin: auto;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-shadow: 1px 1px 5px black;
+}
+
+#p1_formulario{
+    text-align: left;
+}
+
+#p1_formulario input{
+    width: 300px;
+    padding: 8px;
+    border-radius: 2px;
+    outline: none;
+    border: 1px solid gray
+
+}
+
+input:focus{
+    border: 1px solid blue;
+    box-shadow: 0px 0px 3px blue;
+
+}
+
+button{
+    background-color: rgb(216, 216, 51);
+    border: none;
+    padding: 5px 15px 5px 15px;
+    border-radius: 4px;
+}
+
+button:hover{
+    background-color: rgb(152, 152, 247);
+    color: white;
+    cursor: pointer;
+}
+
+select{
+    padding: 10px;
+    
+}

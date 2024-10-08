@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Aula 01 - Formulários</title>
+
+</head>
+<body>
+    <h1>Cadastro</h1>
+    
+    <form action="" method="post">
+    <div id="p1_formulario">
+        <label for="primeiro_nome">
+            Primeiro nome:
+        </label>
+        <input type="text"
+               name="primeiro_nome"
+               id="primeiro_nome"
+               placeholder="Digite apenas seu 1° nome"><br>
+        <label for="sobrenome"><br>
+            Sobrenome:
+        </label>
+        <input type="text"
+               name="sobrenome"
+               placeholder="Digite seu sobrenome"> <br><br>
+               
+               <label> Digite a senha: </label>
+               <input type="password"
+                      name="senha"
+                      placeholder="Digite sua senha"> <br><br>
+
+               <label> Repita a senha: </label>
+               <input type="password"
+                      name="senha2" required
+                      placeholder="Digite a senha novamente"> <br><br>
+
+               <label> E-mail: </label>
+               <input type="e-mail"
+                      name="e-mail" required
+                      placeholder="Ex:josedimaria@gmail.com"> <br><br>
+
+               <label> Tempo de experiência (anos): </label>
+               <input type="number"
+                      name="tempo"
+                      placeholder="Selecione o tempo de experiência"> <br><br>
+                      
+               <label> Altura (m): </label>
+               <input type="number"
+                      name="altura"
+                      min="1.60"
+                      max="1.90"
+                      step="0.01"
+                      placeholder="Ex:1,75m"> <br><br>
+
+               <label> Contato (tel): </label>
+               <input type="tel"
+                      name="contato"
+                      placeholder="Digite seu número"> <br><br>
+
+               <label> Data de nascimento: </label>
+               <input type="datetime-local"
+                      name="data/hora_nasc"
+                      placeholder="Digite data e hora"> <br><br>
+                <h4>Ling. preferenciais</h4>  
+</div>
+                <input type="checkbox"
+                       name="op_python"
+                       value="1001">
+                <label>Python</label> <br>
+
+                <input type="checkbox"
+                       name="op_js"
+                       value="1001">
+                <label>Java Script</label> <br>
+
+                <input type="checkbox"
+                       name="op_csharp"
+                       value="1001">
+                <label>C#</label> <br><br>
+
+                <h4>Possui alguma deficiência?</h4>
+                <input type="radio"
+                       name="e_pcd"
+                       value="Sim">
+                <label>Sim</label><br>
+
+                <input type="radio"
+                       name="e_pcd"
+                       value="Não">
+                <label>Não</label> <br><br>
+
+                <label> Preferência de cor(site): </label>
+                <input type="color"
+                       name="cor_preferencial"> <br><br>
+
+                <label> Observações: </label> <br>
+                <textarea name=""
+                          cols="30"
+                          rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quidem dignissimos cumque quam ullam ab voluptate mollitia? Veritatis repudiandae deserunt at voluptatum ducimus. Unde deserunt doloremque obcaecati labore nemo necessitatibus.</textarea> <br><br>
+
+                <label> Curso: </label>
+                <select name="curso_escolhido">
+                <option value=""> Selecione </option>
+                <option value="500"> Dev. de Sistemas</option>
+                <option value="501"> Téc. em Informática</option>
+                <option value="502"> Eletrotécnica </option>
+                </select> <br><br>
+
+                <label> Disponibilidade: </label> <br>
+                <input type="range"
+                       min="30"
+                       max="200"> <br><br>
+                <button type="submit"> Cadastrar </button>
+                <button type="reset"> Cancelar </button>
+    </form>
+    
+</body>
+</html>
